@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/aes.js"></script>
+  <script src="js/Extentions.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <section class="top-banner">
+    <div class="container">
+      <center>
+        <img src="https://d1psgljc389n8q.cloudfront.net/bootcamps/logos/VX6tpIUJa" alt="Bank logo" class="nav__logo"
+          id="logo" />
+          <h1 class="heading">
+            Weather App</h1>
+      </center>
+      <form>
+        <input type="text" placeholder="Search for a city" autofocus id="input">
+        <button type="submit" id="button">SUBMIT</button>
+        <span class="msg"></span>
+      </form>
+    </div>
+  </section>
+
+  <section class="ajax-section">
+    <div class="container">
+      <ul class="cities" >
+        <li class="li" style="background-color: white; border-radius: 10px; padding: 10px; width: 200px;">
+          <p style="font-size: 40px;">Izmir <sup style="text-transform: uppercase; font-size: small; background-color: orange; border-radius: 5px; padding: 2px;">tr</sup></p>
+          <p style="font-weight: 900; font-size: 80px;">13<sup style='font-size: 40px;'>°C</sup></p>
+          <img src="http://openweathermap.org/img/wn/03d@2x.png" alt="sys">
+          <p style="text-transform: uppercase;">few clouds</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="page-footer">
+    <div class="container">
+      <small>Coded by <span>❤</span>DE-FS Team</a>
+      </small>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="weather.js"></script>
+</body>
+
+</html>
